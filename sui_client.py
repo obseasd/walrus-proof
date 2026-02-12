@@ -16,6 +16,9 @@ log = logging.getLogger("walrusproof.sui")
 SUI_TESTNET_RPC = "https://fullnode.testnet.sui.io:443"
 SUI_DEVNET_RPC = "https://fullnode.devnet.sui.io:443"
 
+# Deployed contract addresses (Sui Testnet)
+WALRUSPROOF_PACKAGE_ID = "0xb9d87d8952e3bad53a1538d8bf5c262fc796c5416be6eeaf8800261b18c521d6"
+
 
 @dataclass
 class SuiTransaction:

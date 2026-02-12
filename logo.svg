@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d4f"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4fc3f7"/>
+      <stop offset="100%" style="stop-color:#0288d1"/>
+    </linearGradient>
+    <linearGradient id="chain" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00e5ff"/>
+      <stop offset="100%" style="stop-color:#4fc3f7"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="250" fill="url(#bg1)" stroke="#4fc3f7" stroke-width="3"/>
+  <!-- Shield shape -->
+  <path d="M256 80 L370 140 L370 270 Q370 370 256 430 Q142 370 142 270 L142 140 Z"
+        fill="url(#shield)" opacity="0.15" stroke="url(#shield)" stroke-width="3"/>
+  <!-- Inner shield -->
+  <path d="M256 110 L345 158 L345 262 Q345 345 256 395 Q167 345 167 262 L167 158 Z"
+        fill="none" stroke="#4fc3f7" stroke-width="2" opacity="0.5"/>
+  <!-- Hash chain links -->
+  <g stroke="url(#chain)" stroke-width="3" fill="none">
+    <!-- Chain link 1 -->
+    <rect x="210" y="170" width="40" height="28" rx="6"/>
+    <!-- Chain link 2 -->
+    <rect x="236" y="210" width="40" height="28" rx="6"/>
+    <!-- Chain link 3 -->
+    <rect x="210" y="250" width="40" height="28" rx="6"/>
+    <!-- Connecting lines -->
+    <line x1="230" y1="198" x2="256" y2="210" opacity="0.7"/>
+    <line x1="256" y1="238" x2="230" y2="250" opacity="0.7"/>
+  </g>
+  <!-- Lock icon in center -->
+  <g transform="translate(256, 230)">
+    <rect x="-18" y="-5" width="36" height="30" rx="4" fill="#4fc3f7" opacity="0.9"/>
+    <path d="M-10 -5 L-10 -18 Q-10 -30 0 -30 Q10 -30 10 -18 L10 -5"
+          fill="none" stroke="#00e5ff" stroke-width="3"/>
+    <circle cx="0" cy="10" r="4" fill="#0d1b2a"/>
+    <line x1="0" y1="14" x2="0" y2="20" stroke="#0d1b2a" stroke-width="2.5"/>
+  </g>
+  <!-- Walrus tusks (subtle) -->
+  <g stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.3">
+    <path d="M220 320 Q215 355 225 380"/>
+    <path d="M292 320 Q297 355 287 380"/>
+  </g>
+  <!-- Binary/hash decoration -->
+  <g fill="#4fc3f7" opacity="0.15" font-family="monospace" font-size="10">
+    <text x="155" y="155">a7f3</text>
+    <text x="320" y="175">0x2e</text>
+    <text x="155" y="340">9b1c</text>
+    <text x="310" y="330">ff08</text>
+    <text x="170" y="200">SHA</text>
+    <text x="300" y="280">256</text>
+  </g>
+  <!-- Text: WalrusProof -->
+  <text x="256" y="440" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-weight="bold" font-size="36" fill="#ffffff" letter-spacing="2">
+    WALRUS<tspan fill="#4fc3f7">PROOF</tspan>
+  </text>
+</svg>

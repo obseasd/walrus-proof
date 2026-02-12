@@ -78,6 +78,12 @@ python demo.py --walrus --sui   # + Sui testnet anchoring
 | `contracts/` | Move smart contract for on-chain proof chain |
 | `demo.py` | Interactive demo showing the full pipeline |
 
+## Deployed Contract (Sui Testnet)
+
+**Package ID**: `0xb9d87d8952e3bad53a1538d8bf5c262fc796c5416be6eeaf8800261b18c521d6`
+
+[View on Sui Explorer](https://suiscan.xyz/testnet/object/0xb9d87d8952e3bad53a1538d8bf5c262fc796c5416be6eeaf8800261b18c521d6)
+
 ## Move Smart Contract
 
 The `proof_chain.move` contract provides:
