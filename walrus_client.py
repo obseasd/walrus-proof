@@ -93,7 +93,13 @@ class WalrusClient:
     def health_check(self) -> bool:
         """Check if Walrus endpoints are reachable."""
         try:
-            resp = self.session.get(f"{self.aggregator}/v1/health", timeout=5)
+            # Try storing a tiny test blob - most reliable check
+            resp = self.session.put(
+                f"{self.publisher}/v1/blobs",
+                data=b"healthcheck",
+                params={"epochs": 1},
+                timeout=10,
+            )
             return resp.status_code == 200
         except Exception:
             return False
